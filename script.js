@@ -20,8 +20,8 @@
     document.querySelector('meta[name="theme-color"]').content = mode === 'dark' ? '#0a0c0b' : '#f9f8f4';
     try { localStorage.setItem('freedom-theme',mode); } catch(_) {}
   }
-  let saved = 'dark';
-  try { saved = localStorage.getItem('freedom-theme') || 'dark'; } catch(_) {}
+  let saved = 'light';
+  try { saved = localStorage.getItem('freedom-theme') || 'light'; } catch(_) {}
   setTheme(saved);
   themeButtons.forEach(btn => btn.addEventListener('click',() => setTheme(btn.dataset.setTheme)));
   window.addEventListener('hashchange',showTab);
