@@ -41,3 +41,68 @@ html[data-theme="dark"] .meaning h3{color:#e3b76b;}
 
 /* Minimal heading labels and footer, preserving the existing layout */
 .heading-stack{display:flex;flex-direction:column;gap:3px;min-width:0}.section-kicker{font-size:10px;letter-spacing:.3em;font-weight:500;color:var(--muted);line-height:1.6}.copyright{margin-top:8px;font-size:11px;color:var(--muted)}
+
+/* Four-stage journey and a value that runs through every stage. */
+.journey-principle{margin:46px 0 0;padding:24px 0 0;border-top:1px solid var(--line);text-align:center;color:var(--text);font-family:Georgia,"Times New Roman",serif;font-size:clamp(16px,2vw,22px);font-weight:600;line-height:1.65;letter-spacing:-.015em}
+@media(max-width:700px){.journey-principle{margin-top:34px;padding-top:20px;font-size:17px}}
+
+/* The Values — follows The Journey on My Philosophy. */
+.values{width:min(100%,1000px);margin:0 auto 112px}
+.value-overview{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:22px 0 52px;text-align:center}
+.value-overview>div{display:flex;flex-direction:column;align-items:center;gap:12px;font-size:20px;font-weight:600}
+.value-overview svg{width:35px;height:35px;stroke:var(--gold);stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.value-list{display:grid;gap:28px}
+.value-item{display:grid;grid-template-columns:176px minmax(0,1fr);gap:28px;align-items:center}
+.value-item img{display:block;width:176px;height:176px;object-fit:cover;border-radius:23px}
+.value-item h3{font-size:22px;line-height:1.5;letter-spacing:-.025em;margin-bottom:9px}
+.value-item p{font-size:17px;line-height:1.9;color:var(--sub)}
+@media(max-width:700px){.values{margin-bottom:76px}.value-overview{gap:8px;margin:18px 0 34px}.value-overview>div{font-size:15px;gap:8px}.value-overview svg{width:29px;height:29px}.value-list{gap:22px}.value-item{grid-template-columns:104px minmax(0,1fr);gap:16px}.value-item img{width:104px;height:104px;border-radius:17px}.value-item h3{font-size:16px;margin-bottom:4px}.value-item p{font-size:13px;line-height:1.7}}
+@media(max-width:370px){.value-item{grid-template-columns:88px minmax(0,1fr);gap:12px}.value-item img{width:88px;height:88px}.value-item h3{font-size:14px}.value-item p{font-size:12px}}
+
+/* Aligned Journey / Values sections and a shared values transition. */
+.journey,.values{width:min(100%,830px);margin-left:auto;margin-right:auto}
+.journey{margin-bottom:76px}
+.values{margin-bottom:112px}
+.values-bridge{text-align:center;padding:27px 20px 29px;margin:0 0 40px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.bridge-label{display:block;color:var(--muted);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.values-bridge p{font-family:Georgia,"Times New Roman",serif;font-size:clamp(19px,2.4vw,27px);line-height:1.5;color:var(--gold);margin:7px 0}
+.bridge-sub{font-size:13px;color:var(--sub)}
+.value-overview{margin:0 0 38px}
+.value-overview svg{width:37px;height:37px;stroke-width:2;stroke:var(--gold)}
+.value-item{grid-template-columns:190px minmax(0,1fr);gap:25px}
+.value-item img{width:190px;height:128px;border-radius:16px}
+@media(max-width:700px){.journey{margin-bottom:54px}.values{margin-bottom:76px}.values-bridge{padding:23px 8px;margin-bottom:28px}.value-item{grid-template-columns:112px minmax(0,1fr);gap:14px}.value-item img{width:112px;height:112px;border-radius:13px}.value-overview{margin-bottom:30px}}
+@media(max-width:370px){.value-item{grid-template-columns:92px minmax(0,1fr)}.value-item img{width:92px;height:92px}}
+
+/* Mobile-first values: guiding principle before the journey; icon-only values. */
+.journey-guiding-values{text-align:center;margin:-6px 0 37px;padding:17px 10px 18px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.guiding-label{display:block;color:var(--muted);font-size:10px;letter-spacing:.15em;line-height:1.6}
+.journey-guiding-values p{font-family:Georgia,"Times New Roman",serif;font-size:clamp(16px,2.3vw,21px);color:var(--gold);line-height:1.5;margin:6px 0}
+.guiding-sub{font-size:12px;color:var(--sub)}
+.value-list-icons{gap:12px}
+.value-list-icons .value-item{display:grid;grid-template-columns:78px minmax(0,1fr);align-items:start;gap:21px;padding:22px 0;border-bottom:1px solid var(--line)}
+.value-list-icons .value-item:last-child{border-bottom:0}
+.value-symbol{width:76px;height:76px;display:grid;place-items:center;color:var(--gold);border:1px solid var(--line);border-radius:20px;background:var(--icon-bg)}
+.value-symbol svg{width:45px;height:45px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.value-list-icons .value-item h3{font-size:20px;margin:0 0 7px}
+.value-list-icons .value-item p{font-size:15px;line-height:1.85}
+@media(max-width:700px){.journey-guiding-values{margin:0 0 29px;padding:16px 4px}.journey-guiding-values p{font-size:16px}.guiding-sub{font-size:11px}.value-list-icons{gap:0}.value-list-icons .value-item{grid-template-columns:57px minmax(0,1fr);gap:15px;padding:22px 0}.value-symbol{width:56px;height:56px;border-radius:15px}.value-symbol svg{width:34px;height:34px}.value-list-icons .value-item h3{font-size:16px;line-height:1.5}.value-list-icons .value-item p{font-size:13px;line-height:1.8}}
+@media(max-width:370px){.value-list-icons .value-item{grid-template-columns:48px minmax(0,1fr);gap:12px}.value-symbol{width:48px;height:48px}.value-symbol svg{width:29px;height:29px}.journey-guiding-values p{font-size:14px}}
+
+/* Values layout refinement: journey first, then unboxed guiding message and symbols. */
+.journey-guiding-values{border-top:0;border-bottom:0;margin:35px 0 0;padding:12px 10px 8px}
+.value-symbol{border:0;border-radius:0;background:transparent}
+@media(max-width:700px){.journey-guiding-values{margin:27px 0 0;padding:10px 4px 6px}}
+
+/* Consistent Philosophy section headings and Journey summary alignment */
+.journey-guiding-values{text-align:left;padding:17px 0 18px;margin:22px 0 0;border:0}
+.journey-guiding-values .guiding-label,.journey-guiding-values .guiding-sub{display:block;text-align:left}
+.journey-guiding-values p{text-align:left}
+
+/* Final refinement: centered journey statement and clean values rhythm. */
+.journey-guiding-values,
+.journey-guiding-values .guiding-label,
+.journey-guiding-values .guiding-sub,
+.journey-guiding-values p { text-align: center; }
+.value-list-icons .value-item,
+.value-list-icons .value-item:last-child { border-bottom: 0; }
